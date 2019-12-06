@@ -40,6 +40,13 @@ export const needAuthRoutes = {
     component: () => import('@/views/projects/Admin/Admin.vue'),
     meta: { title: '后台项目', noCache: true, affix: false }
   },
+  '/projects/im': {
+    path: '/projects/im',
+    name: 'ProjectsIm',
+    // component: () => import('@/views/devMgr/CardExample/CardExample.vue'),
+    component: () => import('@/views/projects/Im/Im.vue'),
+    meta: { title: 'IM抢红包', noCache: true, affix: false }
+  },
 }
 
 /**
