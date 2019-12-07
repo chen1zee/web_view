@@ -9,7 +9,7 @@
         <svg-icon icon-class="user" />
       </span>
       <el-input tabindex="1" ref="username" v-model="loginForm.username"
-        placeholder="账号" name="username" type="text" auto-complete="on" />
+        placeholder="账号随便填" name="username" type="text" auto-complete="on" />
     </el-form-item>
     <el-tooltip v-model="capsTooltip" content="大写锁定已打开" placement="right" manual>
       <el-form-item prop="password">
@@ -17,7 +17,7 @@
           <svg-icon icon-class="password" />
         </span>
         <el-input tabindex="2" :key="passwordType" ref="password" v-model="loginForm.password"
-                  :type="passwordType" placeholder="密码" name="password" auto-complete="on"
+                  :type="passwordType" placeholder="密码随便填" name="password" auto-complete="on"
                   @keyup.native="checkCapslock" @blur="capsTooltip = false"
                   @keyup.enter.native="handleLogin"/>
         <span class="show-pwd" @click="showPwd">
@@ -25,13 +25,6 @@
         </span>
       </el-form-item>
     </el-tooltip>
-     <el-form-item prop="yzm">
-        <span class="svg-container">
-          <svg-icon icon-class="password" />
-        </span>
-        <el-input tabindex="3" ref="yzm" v-model="loginForm.yzm"
-          placeholder="请输入谷歌验证码" name="yzm" type="text" maxlength="6" auto-complete="on" />
-    </el-form-item>
     <el-button tabindex="4" :loading="loading" type="primary"
                style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
   </el-form>
