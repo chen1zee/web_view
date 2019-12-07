@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+}
+h1 {
+    margin: 0;
+}
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 900px;
+    background: #012151 url("https://wx2.sinaimg.cn/large/771a734dgy1g8vobis1llj22i20u07wh.jpg") no-repeat top left;
+    background-size: contain;
+}
+.wrap h1 {
+    padding-top: 80px;
+    text-align: center;
+    font-family: Effra,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 80px;
+    color: white;
+}
+.wrap h2 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 60px;
+    color: #eeeeee;
+    font-family: Effra,Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+.wrap a {
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #012151;
+    padding-bottom: 10px;
+}
+.footer p {
+    margin: 0;
+    padding-top: 5px;
+    color: #acacac;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+.footer p a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #acacac;
+}
